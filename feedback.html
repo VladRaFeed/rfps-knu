@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв’язок - Daily Truth</title>
+</head>
+<body>
+
+    <header>
+        <h1>Зворотній зв’язок</h1>
+        <nav>
+            <a href="index.html">Повернутися на головну</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Напишіть нам</h2>
+            
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Персональна інформація</legend>
+
+                    <label for="fullname">Прізвище та ім’я:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+                    <label for="age">Вік:</label><br>
+                    <input type="number" id="age" name="age" min="16" max="100"><br><br>
+
+                    <label for="education">Освіта:</label><br>
+                    <select id="education" name="education">
+                        <option value="incomplete">Неповна</option>
+                        <option value="full_secondary">Повна середня</option>
+                        <option value="professional">Професійна</option>
+                        <option value="higher">Вища</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <label for="purpose">Мета зворотнього зв’язку:</label><br>
+                <select id="purpose" name="purpose">
+                    <option value="cooperation">Співпраця</option>
+                    <option value="complaint">Скарга на порушення права власності</option>
+                    <option value="suggestion">Пропозиція</option>
+                    <option value="bug_report">Наявність помилки</option>
+                </select>
+                <br><br>
+
+                <label for="details">Детально:</label><br>
+                <textarea id="details" name="details" rows="5" cols="40" maxlength="500" placeholder="Введіть текст повідомлення (до 500 символів)..."></textarea>
+                <br><br>
+
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Я даю згоду на обробку моїх персональних даних</label>
+                <br><br>
+
+                <input type="submit" value="Надіслати повідомлення">
+                <input type="reset" value="Очистити форму">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Технічна підтримка: support@news.com</p>
+    </footer>
+
+</body>
+</html>
